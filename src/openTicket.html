@@ -67,20 +67,20 @@
               <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-speedometer"></use>
             </svg> Dashboard</a></li>
         <li class="c-sidebar-nav-title">Project</li>
-        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="openTicket.html">
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="project.html">
             <svg class="c-sidebar-nav-icon">
               <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-drop1"></use>
             </svg> Project</a></li>
-        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="openTicket.html">
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="ticket.html">
             <svg class="c-sidebar-nav-icon">
               <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-pencil"></use>
             </svg> Ticket</a></li>
         <li class="c-sidebar-nav-title">Components</li>
         <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="setting.html">
-          <svg class="c-sidebar-nav-icon">
-            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-drop1"></use>
-          </svg> Setting</a></li>
-          
+            <svg class="c-sidebar-nav-icon">
+              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-drop1"></use>
+            </svg> Setting</a></li>
+
       </ul>
       <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
     </div>
@@ -122,7 +122,7 @@
             </a>
             <div class="dropdown-menu dropdown-menu-right pt-0">
               <div class="dropdown-header bg-light py-2"><strong>Account</strong></div><a class="dropdown-item" href="#">
-                
+
                 <svg class="c-icon mr-2">
                   <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-account-logout"></use>
                 </svg> Logout</a>
@@ -130,16 +130,8 @@
           </li>
         </ul>
         <div class="c-subheader px-3">
-          <!-- Breadcrumb-->
-          <ol class="breadcrumb border-0 m-0">
-            <li class="breadcrumb-item">Home</li>
-            <li class="breadcrumb-item"><a href="#">Admin</a></li>
-            <li class="breadcrumb-item active">Dashboard</li>         <!-- Breadcrumb-->
-          <ol class="breadcrumb border-0 m-0">
-            <li class="breadcrumb-item">Home</li>
-            <li class="breadcrumb-item">Admin</li>
-            <li class="breadcrumb-item active">Dashboard</li>
-            <!-- Breadcrumb Menu-->
+          <!-- Breadcrumb-->              <!-- Breadcrumb Menu-->
+            </ol>
           </ol>
         </div>
       </header>
@@ -183,7 +175,7 @@
                               <a href="#" class="badge badge-danger">Open</a>
                             </td>
                             <td>
-                              <a href="#" class="badge badge-info">Detail</a>
+                              <button class="btn btn-success">Detail</button>
                             </td>
                           </tr>
                           <tr>
@@ -200,7 +192,7 @@
                               <a href="#" class="badge badge-success">Close</a>
                             </td>
                             <td>
-                              <a href="#" class="badge badge-info">Detail</a>
+                              <button class="btn btn-success">Detail</button>
                             </td>
                           </tr>
                         </tbody>
@@ -244,6 +236,7 @@
     <script src="vendors/@coreui/chartjs/js/coreui-chartjs.bundle.js"></script>
     <script src="vendors/@coreui/utils/js/coreui-utils.js"></script>
     <script src="js/main.js"></script>
+
 
 
 

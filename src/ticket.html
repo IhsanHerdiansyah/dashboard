@@ -129,57 +129,117 @@
             </div>
           </li>
         </ul>
-        <div class="c-subheader px-3">              <!-- Breadcrumb Menu-->
+        <div class="c-subheader px-3">
+              <!-- Breadcrumb Menu-->
             </ol>
           </ol>
         </div>
       </header>
-      <center>
-
-        <form style="margin-top: 20px;">
-          <div class="form-group row">
-            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-            <div class="col-sm-7">
-              <input id="inputEmail3" class="form-control" type="email" placeholder="contoh@gmail.com" readonly>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="inputname3" class="col-sm-2 col-form-label">Name</label>
-            <div class="col-sm-7">
-              <input type="text" class="form-control" id="inputName3">
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="inputPhone3" class="col-sm-2 col-form-label">Phone</label>
-            <div class="col-sm-7">
-              <input type="text" class="form-control" id="inputPhone3">
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="inputCorp3" class="col-sm-2 col-form-label">Name Of Coorporation</label>
-            <div class="col-sm-7">
-              <input type="text" class="form-control" id="inputCorp3">
-            </div>
-          </div>
-          <div class="form-group row">
-            <div class="col-sm-10">
-              <button type="submit" class="btn btn-success">Submit</button>
-              <button type="submit" class="btn btn-danger">Cancel</button>
-            </div>
-          </div>
-        </form>
-      </center>
-      <!-- CoreUI and necessary plugins-->
-      <script src="vendors/@coreui/coreui/js/coreui.bundle.min.js"></script>
-      <!--[if IE]><!-->
-      <script src="vendors/@coreui/icons/js/svgxuse.min.js"></script>
-      <!--<![endif]-->
-      <!-- Plugins and scripts required by this view-->
-      <script src="vendors/@coreui/utils/js/coreui-utils.js"></script>
-      <script src="js/colors.js"></script>
+      <div class="c-body">
+        <main class="c-main">
+          <div class="container-fluid">
+            <div class="fade-in">
 
 
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="card">
+                    <div class="card-header">Traffic &amp; Sales</div>
+                    <div class="card-body">
+
+                      <!-- /.row--><br>
+                      <table class="table table-responsive-sm table-hover table-outline mb-0">
+                        <thead class="thead-light">
+                          <tr>
+                            <th class="text-center">No</th>
+                            <th>ID</th>
+                            <th class="text-center">Subject</th>
+                            <th>Type</th>
+                            <th class="text-center">Description</th>
+                            <th class="text-center">Status</th>
+                            <th>Aksi</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center">
+                              1
+                            </td>
+                            <td>
+                              <div>1243517</div>
+                            </td>
+                            <td class="text-center">Login Error</td>
+                            <td>Mobile Apps</td>
+                            <td class="text-center">Login tidak bisa digunakan</td>
+                            <td class="text-center">
+                              <a href="#" class="badge badge-danger">Open</a>
+                            </td>
+                            <td>
+                                <button class="btn btn-success">Detail</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">
+                              2
+                            </td>
+                            <td>
+                              <div>1243518</div>
+                            </td>
+                            <td class="text-center">Pagination Error</td>
+                            <td>Web Apps</td>
+                            <td class="text-center">Pagination tidak berfungsi</td>
+                            <td class="text-center">
+                              <a href="#" class="badge badge-success">Close</a>
+                            </td>
+                            <td>
+                                <button class="btn btn-success">Detail</button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <nav aria-label="...">
+                    <ul class="pagination">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                      </li>
+                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item " aria-current="page">
+                        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <!-- /.col-->
+              </div>
+              <!-- /.row-->
+            </div>
+          </div>
+        </main>
+        <footer class="c-footer">
+          <div><a href="https://coreui.io">CoreUI</a> © 2020 creativeLabs.</div>
+          <div class="ml-auto">powered by&nbsp;<a href="https://coreui.io/">CoreUI</a></div>
+        </footer>
+      </div>
     </div>
+    <!-- CoreUI and necessary plugins-->
+    <script src="vendors/@coreui/coreui/js/coreui.bundle.min.js"></script>
+    <!--[if IE]><!-->
+    <script src="vendors/@coreui/icons/js/svgxuse.min.js"></script>
+    <!--<![endif]-->
+    <!-- Plugins and scripts required by this view-->
+    <script src="vendors/@coreui/chartjs/js/coreui-chartjs.bundle.js"></script>
+    <script src="vendors/@coreui/utils/js/coreui-utils.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+
 
   </body>
 </html>
