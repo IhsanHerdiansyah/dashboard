@@ -50,7 +50,7 @@
       gtag('config', 'UA-118965717-5');
     </script>
     <link href="vendors/@coreui/chartjs/css/coreui-chartjs.css" rel="stylesheet">
-
+    
   </head>
   <body class="c-app">
     <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show" id="sidebar">
@@ -67,7 +67,11 @@
             <svg class="c-sidebar-nav-icon">
               <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-speedometer"></use>
             </svg> Dashboard</a></li>
-        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="project.html">
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="master.html">
+            <svg class="c-sidebar-nav-icon">
+              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-drop1"></use>
+            </svg> Master</a></li>
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="master.html">
             <svg class="c-sidebar-nav-icon">
               <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-pencil"></use>
             </svg> Project</a></li>
@@ -184,94 +188,92 @@
                   </div>
                 </div>
               </div>
-            </div>
+              </div>
 
-            <div class="row ">
-              <div class="col-md-12">
-
-
-                <div class="card">
-                  <div class="card-body">
+              <div class="row ">
+                <div class="col-md-12">
                     <div class="row justify-content-between">
-                      <div class="col-4">
-                        <form class="form-inline">
-                          <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Show</label>
-                          <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                            <option selected="">10</option>
-                            <option value="1">10</option>
-                            <option value="2">50</option>
-                            <option value="3">75</option>
-                            <option value="4">100</option>
-                          </select>
-                        </form>
-                      </div>
-                      <div class="col-4">
-                        <div class="form-group">
-                          <input type="text" class="form-control" placeholder="Search">
+                        <div class="col-4">
+                            <form class="form-inline">
+                                <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Show</label>
+                                <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                  <option selected>10</option>
+                                  <option value="1">10</option>
+                                  <option value="2">50</option>
+                                  <option value="3">75</option>
+                                  <option value="4">100</option>
+                                </select>                              
+                              </form>
+                        </div>
+                        <div class="col-4">
+                          <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Search">
+                          </div>
                         </div>
                       </div>
+                    
+                      <div class="card">
+                          <div class="card-body">
+                              <table class="table p-5">
+                        <thead>
+                          <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">No Ticket</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                            <th scope="col">Status</th>
+                            <th scope="col text-center">Aksi</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td><span class="badge badge-danger">Open</span></td>
+                            <td><button class="btn btn-success">Detail</button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td><span class="badge badge-danger">Open</span></td>
+                            <td><button class="btn btn-success">Detail</button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td><span class="badge badge-success">Close</span></td>
+                            <td><button class="btn btn-success">Detail</button></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <nav aria-label="Page navigation ">
+                        <ul class="pagination justify-content-center">
+                          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                      </nav>
                     </div>
-                    <table class="table p-5">
-                      <thead>
-                        <tr>
-                          <th scope="col">No</th>
-                          <th scope="col">No Ticket</th>
-                          <th scope="col">Last</th>
-                          <th scope="col">Handle</th>
-                          <th scope="col">Status</th>
-                          <th scope="col text-center">Aksi</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">1</th>
-                          <td>Mark</td>
-                          <td>Otto</td>
-                          <td>@mdo</td>
-                          <td><span class="badge badge-danger">Open</span></td>
-                          <td><button class="btn btn-success">Detail</button></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">2</th>
-                          <td>Jacob</td>
-                          <td>Thornton</td>
-                          <td>@fat</td>
-                          <td><span class="badge badge-danger">Open</span></td>
-                          <td><button class="btn btn-success">Detail</button></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">3</th>
-                          <td>Larry</td>
-                          <td>the Bird</td>
-                          <td>@twitter</td>
-                          <td><span class="badge badge-success">Close</span></td>
-                          <td><button class="btn btn-success">Detail</button></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <nav aria-label="Page navigation  ">
-                      <ul class="pagination justify-content-center mt-5">
-                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                      </ul>
-                    </nav>
-                  </div>
                 </div>
 
-
+                      
+                </div>
+                <!-- /.col-->
               </div>
-              <!-- /.col-->
+              <!-- /.row-->
             </div>
-            <!-- /.row-->
           </div>
         </main>
       </div>
-
     </div>
-
     <!-- CoreUI and necessary plugins-->
     <script src="vendors/@coreui/coreui/js/coreui.bundle.min.js"></script>
     <!--[if IE]><!-->
@@ -292,46 +294,44 @@
     <script src="js/charts.js"></script>
 
     <script>
-      var ctx = document.getElementById('canvas-2').getContext('2d');
-      var myChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-          datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: [
-              'rgba(255, 99, 132, 0.2)',
-              'rgba(54, 162, 235, 0.2)',
-              'rgba(255, 206, 86, 0.2)',
-              'rgba(75, 192, 192, 0.2)',
-              'rgba(153, 102, 255, 0.2)',
-              'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-              'rgba(255, 99, 132, 1)',
-              'rgba(54, 162, 235, 1)',
-              'rgba(255, 206, 86, 1)',
-              'rgba(75, 192, 192, 1)',
-              'rgba(153, 102, 255, 1)',
-              'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
-          }]
-        },
-        options: {
-          scales: {
-            yAxes: [{
-              ticks: {
-                beginAtZero: true
-              }
-            }]
-          }
-        }
-      });
-    </script>
-
-
+        var ctx = document.getElementById('canvas-2').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+        </script>
 
   </body>
 </html>

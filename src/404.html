@@ -6,6 +6,7 @@
 * Copyright (c) 2020 creativeLabs Łukasz Holeczek
 * Licensed under MIT (https://coreui.io/license)
 -->
+
 <html lang="en">
   <head>
     <base href="./">
@@ -49,51 +50,31 @@
       // Bootstrap ID
       gtag('config', 'UA-118965717-5');
     </script>
-
-    <style>
-      .form {
-        background-color: #fff;
-      }
-
-      .form2 {
-        margin-top: 130px;
-      }
-    </style>
   </head>
-  <body class="c-app form">
-    <div class="container p-5">
-      <div class="row">
-        <div class="col-md-6 form2">
-          <h1>TMS</h1>
-          <h4>Ticketing Management System</h4>
-          <div class="form-group">
-            <input type="text" class="form-control mb-3 mt-3" placeholder="Username">
-            <input type="password" class="form-control" placeholder="Password">
-            <div class="row justify-content-between mt-3">
-              <div class="col-4">
-                <div class="form-group form-check ">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Remember me</label>
-                </div>
-              </div>
-              <div class="col-4">
-                <a href="forgot.html" class="text-decoration-none ml-4 text-dark">Forgot password?</a>
-              </div>
-            </div>
-            <button class="btn btn-success" style="width: 80px;">Login</button>
-          </div>
-        </div>
+  <body class="c-app flex-row align-items-center">
+    <div class="container">
+      <div class="row justify-content-center">
         <div class="col-md-6">
-          <img src="assets/img/avatars/animation_640_kfg7jjsu.gif" class="img-fluid" alt="" srcset="">
+          <div class="clearfix">
+            <h1 class="float-left display-3 mr-4">404</h1>
+            <h4 class="pt-3">Oops! You're lost.</h4>
+            <p class="text-muted">The page you are looking for was not found.</p>
+          </div>
+          <div class="input-prepend input-group">
+            <div class="input-group-prepend"><span class="input-group-text">
+                <svg class="c-icon">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-magnifying-glass"></use>
+                </svg></span></div>
+            <input class="form-control" id="prependedInput" size="16" type="text" placeholder="What are you looking for?"><span class="input-group-append">
+              <button class="btn btn-info" type="button">Search</button></span>
+          </div>
         </div>
       </div>
     </div>
     <!-- CoreUI and necessary plugins-->
-    <script src="vendors/@coreui/coreui/js/coreui.bundle.min.js"></script>
+    <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
     <!--[if IE]><!-->
-    <script src="vendors/@coreui/icons/js/svgxuse.min.js"></script>
+    <script src="node_modules/@coreui/icons/js/svgxuse.min.js"></script>
     <!--<![endif]-->
-
-
   </body>
 </html>

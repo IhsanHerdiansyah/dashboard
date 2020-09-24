@@ -49,43 +49,39 @@
       // Bootstrap ID
       gtag('config', 'UA-118965717-5');
     </script>
-
     <style>
-      .form {
+      .body {
         background-color: #fff;
       }
 
       .form2 {
-        margin-top: 130px;
+        margin-top: 170px;
+      }
+
+      button {
+        width: 540px;
       }
     </style>
   </head>
-  <body class="c-app form">
-    <div class="container p-5">
-      <div class="row">
-        <div class="col-md-6 form2">
-          <h1>TMS</h1>
-          <h4>Ticketing Management System</h4>
-          <div class="form-group">
-            <input type="text" class="form-control mb-3 mt-3" placeholder="Username">
-            <input type="password" class="form-control" placeholder="Password">
-            <div class="row justify-content-between mt-3">
-              <div class="col-4">
-                <div class="form-group form-check ">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Remember me</label>
-                </div>
-              </div>
-              <div class="col-4">
-                <a href="forgot.html" class="text-decoration-none ml-4 text-dark">Forgot password?</a>
-              </div>
-            </div>
-            <button class="btn btn-success" style="width: 80px;">Login</button>
-          </div>
-        </div>
+
+  <body class="c-app body">
+    <div class="container form2">
+      <h2 class="text-center text-bold">Did your forgot password?</h2>
+      <h3 class="text-center lead">Enter your email addressyou're using for you account below <br> and we will send you a password reset link</h3>
+      <div class="row mt-4">
+        <div class="col-md-3"></div>
         <div class="col-md-6">
-          <img src="assets/img/avatars/animation_640_kfg7jjsu.gif" class="img-fluid" alt="" srcset="">
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Enter your email">
+          </div>
+          <center>
+            <button class="btn btn-success mt-1 mb-4">Submit</button>
+          </center>
+          <center>
+            <a href="login.html" class="text-decoration-none text-dark text-center">Back to sign in</a>
+          </center>
         </div>
+        <div class="col-md-auto"></div>
       </div>
     </div>
     <!-- CoreUI and necessary plugins-->
