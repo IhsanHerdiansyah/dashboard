@@ -53,8 +53,8 @@
 
     <style>
         .img1{
-            height: 100px;
-            margin-left: 70px ;
+            height: 200px;
+            margin-left: 70px !important;
         }
     </style>
 
@@ -70,16 +70,16 @@
         </svg>
       </div>
       <ul class="c-sidebar-nav">
-        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="index.html">
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="admin.html">
             <svg class="c-sidebar-nav-icon">
               <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-speedometer"></use>
             </svg> Dashboard</a></li>
-        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="project.html">
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="master.html">
             <svg class="c-sidebar-nav-icon">
               <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-pencil"></use>
             </svg> Project</a></li>
 
-        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="ticket.html">
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="master.html">
             <svg class="c-sidebar-nav-icon">
               <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-pencil"></use>
             </svg> Ticket</a></li>
@@ -167,8 +167,9 @@
         <div class="c-subheader px-3">
           <!-- Breadcrumb-->
           <ol class="breadcrumb border-0 m-0">
-            <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-dark">Dashboard</a></li>
-            <li class="breadcrumb-item text-primary">Setting</li>
+            <li class="breadcrumb-item">Home</li>
+            <li class="breadcrumb-item"><a href="#">Admin</a></li>
+            <li class="breadcrumb-item active">Dashboard</li>
             <!-- Breadcrumb Menu-->
           </ol>
         </div>
@@ -185,43 +186,102 @@
             <div class="row ">
               <div class="col-md-12">
                 <div class="card">
-                    <div class="card-body">
-                        <div class="container">
-                            <center>
-                            <h3 class="text-bold">Edit Profile</h3>
-                            <div class="form-group">
-                            <img src="assets/img/avatars/3.jpg" class="rounded-circle mt-3" height="100" alt=""><br>
-                            <input type="file" class="mt-3 ml-5">
+                  <div class="container p-5">
+                      <div class="row">
+                          <div class="col-md-6">
+                              <img src="assets/img/avatars/index.png" class="img-fluid img1 ml-5" alt="">
+                          </div>
+                          <div class="col-md-6 ml-n5 mt-4">
+                              <h3 class="text-bold">Millenium Investment</h3>
+                              <h4 class="lead"><b>Address : </b> Grand Sharon Residence, Kav 282, Jl. Sharon Raya Bar. No.11, Cipamokolan, Kec. Rancasari, Kota Bandung, Jawa Barat 40292 </h4>
+                              <h4 class="lead"><b>company identity : </b> Invest is the best in your life</h4>
+                              <h4 class="lead"><b>Email : </b> Millenium@gmail.com</h4>
+                          </div>
+                      </div>
+                      <hr>
+                      <div class="container ml-5">
+                          <div class="row mt-5">
+                              <div class="col-sm-2">
+                                <b class="lead">No ticket :</b>
+                              </div>
+                              <div class="col-sm-10">
+                                <b class="lead">0916261512</b>
                             </div>
+                          </div>
 
-                            <div class="row justify-content-center">
-                                <div class="col-md-5 ">
-                                    <div class="form-group">
-                                        <input type="Email" class="form-control" placeholder="Email">
-                                    </div>
-                                </div>
-                                <div class="col-md-5 ">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name Company">
-                                    </div>
-                                </div>
+                          <div class="row mt-2">
+                            <div class="col-sm-2">
+                              <b class="lead">Name Corp : </b>
                             </div>
-
-                            <div class="row justify-content-center">
-                                <div class="col-md-5 ">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name Project">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <button class="btn btn-success" style="width: 120px;">Submit</button>
-                            <button class="btn btn-danger" style="width: 120px;">Cancel</button>
-                            <a href="index.html" class="text-decoration-none"></a>
-                            </center>
+                            <div class="col-sm-10">
+                              <b class="lead">Millenium Investment</b>
+                          </div>
                         </div>
-                    </div>
+
+                        <div class="row mt-2">
+                            <div class="col-sm-2">
+                              <b class="lead">Date : </b>
+                            </div>
+                            <div class="col-sm-10">
+                              <b class="lead">27 September 2020</b>
+                          </div>
+                        </div>
+
+                        <div class="row mt-2">
+                            <div class="col-sm-2">
+                              <b class="lead">Date : </b>
+                            </div>
+                            <div class="col-sm-10">
+                              <b class="lead">27 September 2020</b>
+                          </div>
+                        </div>
+
+                        <div class="row mt-2">
+                            <div class="col-sm-2">
+                              <b class="lead">Subject : </b>
+                            </div>
+                            <div class="col-sm-10">
+                              <b class="lead">Keluhan pada admin, typo pada tulisan</b>
+                          </div>
+                        </div>
+
+                        <div class="row mt-2">
+                            <div class="col-sm-2">
+                              <b class="lead">Type : </b>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>Urgent</option>
+                                      <option>No urgent</option>
+                                    </select>
+                                  </div>
+                          </div>
+                        </div>
+
+                        <div class="row mt-2">
+                            <div class="col-sm-2">
+                              <b class="lead">Information : </b>
+                            </div>
+                            <div class="col-sm-10">
+                              <b class="lead">keluhan pada admin tidak bisa di coba maupun di klik , mohon secepatnya untuk bisa di perbaiki lagi masalah admin dan saya tunggu waktunya yaitu pada pukul jam 7 malam sore ini</b>
+                          </div>
+                        </div>
+
+                        <div class="row mt-2 mb-5">
+                            <div class="col-sm-2">
+                              <b class="lead">Status : </b>
+                            </div>
+                            <div class="col-sm-auto">
+                              <b class="lead bg-success text-light ">Open</b>
+                          </div>
+                        </div>
+
+                        <a href="project.html" class="text-decoration-none ">Back to project</a>
+
+                      </div>
                   </div>
+                </div>
 
 
               </div>
